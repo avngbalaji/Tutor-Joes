@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(173, 169, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart{
+    height: 64px;
+    width: 64px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: relative;
+    animation: blink 1s infinite;
+}
+
+.circle{
+    height: 64px;
+    width: 64px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.heart>div:nth-child(1){
+    position: absolute;
+    right: 35px;
+}
+
+.heart>div:nth-child(2){
+    position: absolute;
+    bottom: 35px;
+}
+
+@keyframes blink{
+    0%{
+        transform: scale(1) rotate(45deg);
+        opacity: 0;
+    }
+    40%{
+        transform: scale(1.1) rotate(45deg);
+        opacity: 0.4;
+    }
+    70%{
+        transform: scale(1.2) rotate(45deg);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(1.3) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+

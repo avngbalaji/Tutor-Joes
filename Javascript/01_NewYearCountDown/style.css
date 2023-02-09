@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+    background-color: red;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/pexels-rakicevic-nenad-769525.jpg');
+    /* background-image: url('/images/pexels-rakicevic-nenad-769525.jpg'); */
+    background-position: center;
+    background-size: cover;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 100px;
+    font-weight: 400;
+    font-family: 'Inspiration', cursive;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+.box h2{
+    font-size: 42px;
+    font-weight: 400;
+}
+.box small{
+    font-size: 20px;
+}
+
+@media (min-width:900px){
+    p{
+    font-size: 35px;
+    margin-bottom: 30px;
+    }
+    h1{
+    font-size: 150px;
+    font-weight: 500;
+    font-family: 'Inspiration', cursive;
+    }
+    .box{
+    height: 150px;
+    width: 150px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    }
+    .box h2{
+    font-size: 62px;
+    font-weight: 500;
+    }
+    .box small{
+    font-size: 25px;
+    } 
+}
+
+@media (min-width:1600px){
+    p{
+    font-size: 45px;
+    margin-bottom: 40px;
+    }
+    h1{
+    font-size: 180px;
+    font-weight: 500;
+    font-family: 'Inspiration', cursive;
+    }
+    .box{
+    height: 170px;
+    width: 170px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    }
+    .box h2{
+    font-size: 72px;
+    font-weight: 600;
+    }
+    .box small{
+    font-size: 35px;
+    } 
+}

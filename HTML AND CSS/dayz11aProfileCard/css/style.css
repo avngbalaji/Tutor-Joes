@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Lobster', cursive;
+	background-image: linear-gradient(to right bottom, #ff99ab, #fa83ad, #f06eb4, #de5dc0, #c351d0);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body h2{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.main{
+	height: 550px;
+	width: 350px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.image-box{
+	width: 100%;
+	height: 30%;
+	background-image: url('../images/ant.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat; 
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	position: relative;
+}
+
+.profile{
+	height: 120px;
+	width: 120px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	background-image: url('../images/user.png');
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.content-box{
+	width: 100%;
+	height: 70%;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.content-box p{
+	color: lightgrey;
+}
+
+.follo-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.follo-box h2{
+	color: #2D96DD;
+	font-size: 30px;
+}
+
+.follo-box p{
+	color: lightgrey;
+}
+
+button{
+	width: 100%;
+	height: 35px;
+	background-color: #FED01A;
+	border: none;
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 15px;
+
+}
+
+.des{
+	color: #646464 !important;
+}
+
+
+.dot{
+	align-self: flex-end;
+}

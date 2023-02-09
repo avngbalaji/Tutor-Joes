@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Poppins', sans-serif;
+	background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	background-size: 200% 200%;
+	animation: bg 2s ease infinite;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes bg{
+	0%{
+		background-position: 0%;
+	}
+
+	50%{
+		background-position: 100%;
+	}
+
+	100%{
+		background-position: 0%;
+	}
+}
+
+.card{
+	height: 300px;
+	width: 650px;
+	background-color: white;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 300px;
+	box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+	border-radius: 10px;
+}

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(173, 169, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    height: 64px;
+    width: 64px;
+    position: relative;
+}
+
+.loader div{
+    position: absolute;
+    border: 4px solid white;
+    border-radius: 50%;
+    animation: waves 1s ease-out infinite;
+}
+
+.loader div:nth-child(2){
+    animation-duration: 0.5s;
+    border: 4px solid white;
+}
+
+@keyframes waves{
+    0%{
+        top: 32px;
+        left: 32px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        width: 64px;
+        height: 64px;
+        opacity: 0;
+    }
+}

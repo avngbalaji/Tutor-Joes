@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	margin: 20px;
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);
+}
+
+.main{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+.box{
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+	color:white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 200px;
+	margin-bottom: 15px;
+	border-radius: 20px;
+}
+
+.box-1{
+	background-color: #8E8741;
+}
+
+.box-2{
+	background-color: #659EBC;
+	position: absolute;
+	top: 50vh;
+	left: 60vw;
+}
+
+.box-3{
+	background-color: #ffb879;
+	position: fixed;
+	right: 200px;
+}
+.box-4{
+	background-color: rgb(96, 253, 201);
+	position: absolute;
+	top: 700px;
+	left: 200px;
+}
+.box-5{
+	background-color: rgb(212, 147, 255);
+}
+.box-6{
+	background-color: rgb(170, 147, 255);
+	position: absolute;
+	top: 280px;
+	left: 400px;
+}
+.box-7{
+	background-color: rgb(255, 147, 192);
+	position: absolute;
+	top: 400px;
+	left: 430px;
+	z-index: 2;
+}
+.box-8{
+	background-color: rgb(147, 255, 156);
+	position: absolute;
+	top: 340px;
+	left: 580px;
+}
+.box-9{
+	background-color: rgb(176, 59, 255);
+	position: absolute;
+	top: 0px;
+	left: 900px;
+}
+.box-10{
+	background-color: rgb(255, 172, 48);
+	position: absolute;
+	right: 40px;
+	top: 670px;
+}
+
+.main h2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 32px;
+	font-weight: 900;
+	/* text-transform: uppercase; */
+}

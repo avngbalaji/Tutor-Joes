@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Lobster', cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	font-size: 30px;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.rotater{
+	height: 300px;
+	width: 300px;
+	background: linear-gradient(90deg, hsla(347, 89%, 61%, 1) 0%, hsla(242, 42%, 40%, 1) 100%);
+	border-radius: 50%;
+	background-size: 200% 200%;
+	position: relative;
+	animation: abc 1s linear infinite;
+}
+
+.rotater::before{
+	content: "";
+	height: 90%;
+	width: 90%;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+@keyframes abc{
+	to{
+		transform: rotate(360deg);
+	}
+}

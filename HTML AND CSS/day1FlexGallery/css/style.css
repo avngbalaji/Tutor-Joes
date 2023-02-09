@@ -1,0 +1,40 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   width: 100vw;
+   height: 100vh;
+   background-color: #F0F0F0;
+
+}
+
+h1{
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 35px;
+   text-align: center;
+   color: #2F6E9F;
+   margin-top: 20px;
+   background-color: #B1D4FC;
+}
+
+img{
+   width: 300px;
+   height: 300px;
+   padding: 30px;
+   margin: 20px;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+img:hover{
+   background-color: #FFFFFF;
+}
+
+.container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+}

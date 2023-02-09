@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Aloevera;
+}
+
+@font-face {
+    font-family: Aloevera;
+    src: url(Aloevera-OVoWO.ttf);
+}
+
+:root{
+    --theme-color: black;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.analog-clock{
+    height: 700px;
+    width: 700px;
+    background-color: white;
+    border: 10px solid var(--theme-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.center-dot{
+    height: 15px;
+    width: 15px;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 5px);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.name{
+    color: var(--theme-color);
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number{
+    height: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--theme-color);
+    position: absolute;
+    left: 49%;
+    transform-origin: bottom;
+    --rotate: 0;
+    transform: rotate(var(--rotate));
+}
+
+.number-1{
+    --rotate: 30deg;
+}
+.number-2{
+    --rotate: 60deg;
+}
+.number-3{
+    --rotate: 90deg;
+}
+.number-4{
+    transform: rotate(120deg);
+}
+.number-5{
+    transform: rotate(150deg);
+}
+.number-6{
+    transform: rotate(180deg);
+}
+.number-7{
+    transform: rotate(210deg);
+}
+.number-8{
+    transform: rotate(240deg);
+}
+.number-9{
+    transform: rotate(270deg);
+}
+.number-10{
+    transform: rotate(300deg);
+}
+.number-11{
+    transform: rotate(330deg);
+}
+
+.needle{
+    width: 10px;
+    background-color: var(--theme-color);
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    left: calc(50% + 5px);
+    transform-origin: bottom;
+    --rotation: 0;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+    z-index: 9;
+}
+.hrs{
+    height: 30%;
+    top: 20%;
+}
+.min{
+    height: 43%;
+    top: 7%;
+}
+.sec{
+    height: 43%;
+    top: 7%;
+    width: 5px;
+}
+
+.theme{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.input-text{
+   height: 20px;
+   width: 200px;
+   font-size: 30px;
+   padding: 20px;
+   border: 1px solid grey;
+   border-radius: 10px;
+}
+.theme label{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.btn{
+    height: 40px;
+    width: 400px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input-color{
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+}

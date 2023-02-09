@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #BFBFBF;
+}
+
+main{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    height: 550px;
+    width: 400px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
+}
+
+.card-img{
+    width: 100%;
+    transition: all 400ms;
+}
+
+.card-img:hover{
+    transform: scale(1.2) rotate(8deg);
+}
+
+
+/* options */
+
+.card .options{
+    height: 70px;
+    width: 180px;
+    backdrop-filter: blur(3px) brightness(85%);
+    border-radius: 50px;
+    position: absolute;
+    left: 10px;
+    bottom: 6px;
+    z-index: 99;
+}
+.heart-img{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.cart-img{
+    width: 45px;
+    position: absolute;
+    left: 70px;
+    bottom: 10px;
+}
+
+.share-img{
+    width: 42px;
+    position: absolute;
+    left: 120px;
+    bottom: 10px;
+}

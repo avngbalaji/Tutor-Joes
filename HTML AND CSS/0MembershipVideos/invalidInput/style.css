@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:20px;
+}
+
+.card{
+	height: 400px;
+	width: 700px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:20px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input{
+	height: 40px;
+	width: 550px;
+	border: 2px solid #525252;
+	outline: none;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+button{
+	height: 40px;
+	width: 100px;
+	background-color: #494949;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input:invalid{
+	border-color: red; 
+	animation: shake 0.2s infinite;
+}
+
+input:valid{
+	border-color: green;
+}
+
+@keyframes shake{
+	
+	0%{
+		transform: translateX(4px);
+	}
+	50%{
+		transform: translateX(-4px);
+	}
+	100%{
+		transform: translateX(4px);
+	}
+
+}

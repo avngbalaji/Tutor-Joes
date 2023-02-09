@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;1,700&display=swap');
+
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #CCCCCC;
+}
+
+/*.........header.........*/
+header{
+    height: 70px;
+    width: 100%;
+    background-color: #2F3542;
+    /* line-height: 100px; */
+    user-select: none;
+}
+
+/*..........navbar...........*/
+.navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* navbar logo */
+.navbar .logo h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* first ul of navbar ==============*/
+.navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+}
+
+.navbar ul li:hover{
+    background-color: #57606F;
+}
+
+/* first ul =>down arrow */
+.down-icon{
+    position: relative;
+    top: 4px;
+}
+
+/* second ul ==================*/
+.navbar ul li ul{
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    display: none;
+}
+
+.navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.navbar ul li ul li a{
+    color: black;
+}
+
+.navbar ul li ul li a:hover{
+    color: white;
+}
+
+
+.navbar ul li:hover ul,
+.navbar ul li:focus-within ul{
+    display: block;
+}
+
+/* third ul =================*/
+.navbar ul li ul li ul{
+    left: 202px;
+    top: 0;
+}
+
+input{
+    display: none;
+}
+
+.btn{
+    display: none;
+}
+
